@@ -9,7 +9,7 @@ class Task(models.Model):
         ('In Progress', 'In Progress'),
         ('Completed', 'Completed'),
     )
-
+    task_id=models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
     description = models.TextField()
     due_date = models.DateField()
